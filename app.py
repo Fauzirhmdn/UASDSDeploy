@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+import numpy as np
 from streamlit_option_menu import option_menu
 
 #memuat model yang disimpan
