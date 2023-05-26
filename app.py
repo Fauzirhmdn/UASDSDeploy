@@ -17,7 +17,7 @@ with st.sidebar:
 
 #halaman prediksi penyakit jantung
 
-if (selected == 'Heart Disease Prediction'):
+if (selected == 'Prediksi Penyakit Jantung'):
     
     # page title
     st.title('Prediksi Gagal Jantung Menggunakan Model XGBoost')
