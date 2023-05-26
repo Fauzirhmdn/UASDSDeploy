@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 
 #memuat model yang disimpan
 
-heart_diseases_model = pickle.load(open('model_deteksi_penyakit_jantung.pkl', 'wb'))
+heart_diseases_model = pickle.load(open('model_deteksi_penyakit_jantung.pkl', 'rb'))
 
 
 # navigasi sidebar
