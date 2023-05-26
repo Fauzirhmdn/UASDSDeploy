@@ -1,4 +1,4 @@
-import xgboost
+pip install xgboost
 from xgboost import XGBClassifier
 import pickle
 import streamlit as st
