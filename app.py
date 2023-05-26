@@ -90,7 +90,7 @@ if (selected == 'Prediksi Penyakit Jantung'):
     # membuat tombol untuk Prediksi
 
     if st.button('Heart Disease Test Result'):
-        heart_prediction = heart_diseases_model.predict([[Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up]])
+        heart_prediction = model_deteksi_penyakit_jantung.predict([[Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up]])
 
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
