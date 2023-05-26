@@ -10,7 +10,7 @@ heart_diseases_model = pickle.load(open('model_deteksi_penyakit_jantung.pkl', 'r
 # navigasi sidebar
 
 with st.sidebar:
-    selected = option_menu('prediction system',
+    selected = option_menu('Sistem Prediksi',
                 ['Prediksi Penyakit Jantung'],
                 icons=['heart'], default_index=0)
 
