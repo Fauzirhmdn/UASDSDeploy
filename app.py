@@ -94,8 +94,8 @@ input_data_as_numpy_array = np.asarray(input_data)
 input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 
- # kode untuk prediksi
-   heart_diagnosis = ''
+# kode untuk prediksi
+heart_diagnosis = ''
     
     # membuat tombol untuk Prediksi
 
@@ -107,5 +107,5 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
         else:
           heart_diagnosis = 'The person does not have any heart disease'
         
-    st.success(heart_diagnosis)
+st.success(heart_diagnosis)
       
