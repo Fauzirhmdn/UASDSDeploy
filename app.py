@@ -97,9 +97,9 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 # kode untuk prediksi
 heart_diagnosis = ''
     
-    # membuat tombol untuk Prediksi
+# membuat tombol untuk Prediksi
 
-    if st.button('Heart Disease Test Result'):
+if st.button('Heart Disease Test Result'):
         heart_prediction = heart_diseases_model.predict(input_data_reshaped)
 
         if (heart_prediction[0] == 1):
