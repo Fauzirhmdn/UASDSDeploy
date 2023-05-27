@@ -95,12 +95,12 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 
  # kode untuk prediksi
-    heart_diagnosis = ''
+   heart_diagnosis = ''
     
     # membuat tombol untuk Prediksi
 
     if st.button('Heart Disease Test Result'):
-        heart_prediction = heart_diseases_model.predict([[Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up]])
+        heart_prediction = heart_diseases_model.predict(input_data_reshaped)
 
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
