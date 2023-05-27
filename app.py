@@ -83,6 +83,16 @@ if (selected == 'Prediksi Penyakit Jantung'):
 
     with col2:
         ST_Slope_Up = st.text_input('Kemiringan puncak latihan segmen ST ke atas (1 jika iya, 0 jika tidak)')
+        
+  
+input_data = (Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up)
+
+# changing the input data to numpy array
+input_data_as_numpy_array = np.asarray(input_data)
+
+# reshape the array as we are predicting for one instance
+input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+
 
  # kode untuk prediksi
     heart_diagnosis = ''
