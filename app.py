@@ -59,7 +59,7 @@ if (selected == 'Prediksi Penyakit Jantung'):
         ChestPaintType_TA = st.text_input('Tipe nyeri dada TA (Typical Angina) (1 jika ada, 0 jika tidak ada)')
 
     with col3:
-        ChestPaintType_ATA = st.text_input('Chest Pain type ATA (Atypical Angina) (1 jika ada, 0 jika tidak ada)')
+        ChestPaintType_ATA = st.text_input('Tipe nyeri dada ATA (Atypical Angina) (1 jika ada, 0 jika tidak ada)')
 
     with col1:
         RestingECG_LVH = st.text_input('Istirahat LVH Elektrokardiografi (menunjukkan kemungkinan atau pasti hipertrofi ventrikel kiri menurut kriteria Estes) (1 jika iya, 0 jika tidak)')
@@ -71,10 +71,10 @@ if (selected == 'Prediksi Penyakit Jantung'):
         RestingECG_ST = st.text_input('Istirahat Elektrokardiografi ST yang memiliki kelainan gelombang ST-T (inversi gelombang T dan/atau elevasi atau depresi ST > 0,05 mV) (1 jika iya, 0 jika tidak)')
 
     with col1:
-        ExerciseAngina_N = st.text_input('Latihan Induced Angina N (1 jika tidak ada, 0 jika ada)')
+        ExerciseAngina_N = st.text_input('Exercise Induced Angina N (1 jika tidak ada, 0 jika ada)')
 
     with col2:
-        ExerciseAngina_Y = st.text_input('Latihan Induced Angina Y (1 jika ada, 0 jika tidak ada)')
+        ExerciseAngina_Y = st.text_input('Exercise Induced Angina Y (1 jika ada, 0 jika tidak ada)')
 
     with col3:
         ST_Slope_Down = st.text_input('Kemiringan puncak latihan segmen ST ke bawah (1 jika iya, 0 jika tidak)')
@@ -91,7 +91,7 @@ heart_diagnosis = ''
     
 # membuat tombol untuk Prediksi
 
-if st.button('Heart Disease Test Result'):
+if st.button('Hasil Tes Penyakit Jantungt'):
     input_data = (Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up)
         
 # changing the input data to numpy array
@@ -103,9 +103,9 @@ if st.button('Heart Disease Test Result'):
     heart_prediction = heart_diseases_model.predict(input_data_reshaped)
 
     if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person is having heart disease'
+          heart_diagnosis = 'Orang tersebut memiliki penyakit jantunge'
     else:
-          heart_diagnosis = 'The person does not have any heart disease'
+          heart_diagnosis = 'Orang tersebut tidak memiliki penyakit jantung'
         
 st.success(heart_diagnosis)
       
