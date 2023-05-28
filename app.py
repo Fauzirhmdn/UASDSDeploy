@@ -91,7 +91,7 @@ heart_diagnosis = ''
     
 # membuat tombol untuk Prediksi
 
-if st.button('Hasil Tes Penyakit Jantungt'):
+if st.button('Hasil Tes Penyakit Jantung'):
     input_data = (Age, RestingBP, Cholesterol, FastingBS, MaxHR, Oldpeak, Sex_F, Sex_M, ChestPaintType_ASY, ChestPaintType_NAP, ChestPaintType_TA,  ChestPaintType_ATA, RestingECG_LVH, RestingECG_Normal, RestingECG_ST, ExerciseAngina_N, ExerciseAngina_Y, ST_Slope_Down, ST_Slope_Flat, ST_Slope_Up)
         
 # changing the input data to numpy array
