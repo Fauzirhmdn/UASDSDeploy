@@ -25,7 +25,7 @@ if (selected == 'Prediksi Penyakit Jantung'):
     
     col1 = st.columns(1)
     
-    with col1:
+    col1:
         Age = st.text_input('Umur')
 
     with col1:
