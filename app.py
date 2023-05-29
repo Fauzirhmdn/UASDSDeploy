@@ -29,7 +29,7 @@ if (selected == 'Prediksi Penyakit Jantung'):
         Age = st.text_input('Umur')
 
     with col1:
-        RestingBP = st.text_input('Resting Blood Pressure')
+        RestingBP = st.text_input('Tekanan darah saat istirahat')
 
     with col1:
         Cholesterol = st.text_input('Serum Kolestoral dalam mg/dl')
@@ -41,7 +41,7 @@ if (selected == 'Prediksi Penyakit Jantung'):
         MaxHR = st.text_input('Detak Jantung Maksimum yang Tercapai (Maximum Heart Rate)')
 
     with col1:
-        Oldpeak = st.text_input('Numeric value measured in depression ((Oldpeak asli + 1) x 10')
+        Oldpeak = st.text_input('Oldpeak atau Nilai numerik yang diukur dalam depresi ((Oldpeak asli + 1) x 10')
 
     with col1:
         Sex_F = st.text_input('Kelamin Perempuan (1 jika iya, 0 jika bukan)')
@@ -50,25 +50,25 @@ if (selected == 'Prediksi Penyakit Jantung'):
         Sex_M = st.text_input('Kelamin Laki-laki (1 jika iya, 0 jika bukan)')
 
     with col1:
-        ChestPaintType_ASY = st.text_input('Chest Pain type ASY (Asymptomatic) (1 jika ada, 0 jika tidak ada)')
+        ChestPaintType_ASY = st.text_input('Tipe nyeri dada ASY (Asymptomatic) (1 jika ada, 0 jika tidak ada)')
 
     with col1:
-        ChestPaintType_NAP = st.text_input('Chest Pain type NAP (Non-Anginal Pain) (1 jika ada, 0 jika tidak ada)')
+        ChestPaintType_NAP = st.text_input('Tipe nyeri dada NAP (Non-Anginal Pain) (1 jika ada, 0 jika tidak ada)')
 
     with col1:
-        ChestPaintType_TA = st.text_input('Chest Pain type TA (Typical Angina) (1 jika ada, 0 jika tidak ada)')
+        ChestPaintType_TA = st.text_input('Tipe nyeri dada TA (Typical Angina) (1 jika ada, 0 jika tidak ada)')
 
     with col1:
-        ChestPaintType_ATA = st.text_input('Chest Pain type ATA (Atypical Angina) (1 jika ada, 0 jika tidak ada)')
+        ChestPaintType_ATA = st.text_input('Tipe nyeri dada ATA (Atypical Angina) (1 jika ada, 0 jika tidak ada)')
 
     with col1:
-        RestingECG_LVH = st.text_input('Resting Electrocardiographic LVH (showing probable or definite left ventricular hypertrophy by Estes criteria) (1 jika iya, 0 jika tidak)')
+        RestingECG_LVH = st.text_input('Istirahat Elektrokardiografi LVH (showing probable or definite left ventricular hypertrophy by Estes criteria) (1 jika iya, 0 jika tidak)')
 
     with col1:
-        RestingECG_Normal = st.text_input('Resting Electrocardiographic Normal (1 jika iya, 0 jika tidak)')
+        RestingECG_Normal = st.text_input('Istirahat Elektrokardiografi Normal (1 jika iya, 0 jika tidak)')
 
     with col1:
-        RestingECG_ST = st.text_input('Resting Electrocardiographic ST having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) (1 jika iya, 0 jika tidak)')
+        RestingECG_ST = st.text_input('Istirahat Elektrokardiografi ST yang memiliki kelainan gelombang ST-T (inversi gelombang T dan/atau elevasi atau depresi ST > 0,05 mV) (1 jika iya, 0 jika tidak)')
 
     with col1:
         ExerciseAngina_N = st.text_input('Exercise Induced Angina N (1 jika tidak ada, 0 jika ada)')
@@ -77,13 +77,13 @@ if (selected == 'Prediksi Penyakit Jantung'):
         ExerciseAngina_Y = st.text_input('Exercise Induced Angina Y (1 jika ada, 0 jika tidak ada)')
 
     with col1:
-        ST_Slope_Down = st.text_input('Slope of the peak exercise ST segment Down (1 jika iya, 0 jika tidak)')
+        ST_Slope_Down = st.text_input('Kemiringan puncak latihan segmen ST ke bawah (1 jika iya, 0 jika tidak)')
 
     with col1:
-        ST_Slope_Flat = st.text_input('Slope of the peak exercise ST segment Flat (1 jika iya, 0 jika tidak)')
+        ST_Slope_Flat = st.text_input('Kemiringan puncak latihan segmen ST mendatar (1 jika iya, 0 jika tidak)')
 
     with col1:
-        ST_Slope_Up = st.text_input('Slope of the peak exercise ST segment Up (1 jika iya, 0 jika tidak)')
+        ST_Slope_Up = st.text_input('Kemiringan puncak latihan segmen ST ke atas (1 jika iya, 0 jika tidak)')
         
 
 # kode untuk prediksi
