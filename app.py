@@ -21,7 +21,7 @@ with st.sidebar:
 if (selected == 'Prediksi Penyakit Jantung'):
     
     # page title
-    st.title('Prediksi Gagal Jantung Menggunakan Model XGBoost')
+    st.title('Sistem Prediksi Gagal Jantung Digital')
     
     col1, col2, col3 = st.columns(3)
     
