@@ -21,7 +21,7 @@ with st.sidebar:
 if (selected == 'Prediksi Penyakit Jantung'):
     
     # page title
-    st.title('Sistem Prediksi Gagal Jantung Digital')
+    st.title('Sistem Prediksi Penyakit Jantung ')
     
     col1, col2, col3 = st.columns(3)
     
